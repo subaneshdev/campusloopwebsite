@@ -1,6 +1,5 @@
 import WarpDriveShader from "@/components/ui/warp-drive-shader";
 import { Button } from "@/components/ui/button";
-import { EvervaultCard } from "@/components/ui/evervault-card";
 const Index = () => {
   return <div className="app-container">
       <WarpDriveShader />
@@ -11,17 +10,6 @@ const Index = () => {
             <p className="text-xl md:text-2xl text-white/80 font-light">where every student's journey comes full circle</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-            <div className="h-96">
-              <EvervaultCard text="Students" />
-            </div>
-            <div className="h-96">
-              <EvervaultCard text="Connect" />
-            </div>
-            <div className="h-96">
-              <EvervaultCard text="Learn" />
-            </div>
-          </div>
         </div>
       </div>
     </div>;
