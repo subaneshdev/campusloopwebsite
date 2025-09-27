@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import RotatingGradientRight from "@/components/ui/rotating-gradient-right";
 import MacbookScrollDemo from "@/components/macbook-scroll-demo";
 import { Feature } from "@/components/ui/feature-with-image";
-import { CyberneticBentoGrid } from "@/components/ui/cybernetic-bento-grid";
+import WobbleCardDemo from "@/components/wobble-card-demo";
 
 const Index = () => {
   return (
@@ -22,7 +22,7 @@ const Index = () => {
       <RotatingGradientRight />
       <MacbookScrollDemo />
       <Feature />
-      <CyberneticBentoGrid />
+      <WobbleCardDemo />
     </>
   );
 };

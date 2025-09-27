@@ -197,25 +197,4 @@ All colors MUST be HSL.
       transform: translateY(-20px);
     }
   }
-
-  /* Cybernetic Bento Grid Styles */
-  .main-container {
-    @apply min-h-screen flex items-center justify-center p-4;
-  }
-
-  .bento-grid {
-    @apply grid grid-cols-3 grid-rows-3 gap-4 h-[600px];
-  }
-
-  .bento-item {
-    @apply bg-neutral-900/50 border border-neutral-800 rounded-xl p-6 relative overflow-hidden backdrop-blur-sm;
-    background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.1), transparent 40%);
-    transition: all 0.3s ease;
-  }
-
-  .bento-item:hover {
-    @apply border-neutral-600 bg-neutral-900/70;
-    transform: translateY(-2px);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-  }
 }
