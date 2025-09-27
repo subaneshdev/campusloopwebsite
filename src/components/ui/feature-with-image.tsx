@@ -1,5 +1,4 @@
 import { Badge } from "@/components/ui/badge";
-import MacbookScrollDemo from "@/components/macbook-scroll-demo";
 
 function Feature() {
   return (
@@ -7,7 +6,7 @@ function Feature() {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-10 lg:items-center">
           <div className="bg-transparent rounded-md w-full aspect-video h-full flex-1 relative">
-            <MacbookScrollDemo />
+            {/* This div will serve as the target area where the macbook gets "fixed" */}
           </div>
           <div className="flex gap-4 pl-0 lg:pl-20 flex-col flex-1">
             <div>

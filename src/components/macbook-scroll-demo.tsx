@@ -1,6 +1,5 @@
 import React from "react";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
-import campusDashboard from "@/assets/campus-nexus-dashboard.jpg";
 
 export default function MacbookScrollDemo() {
   return (
@@ -16,7 +15,7 @@ export default function MacbookScrollDemo() {
             <Badge className="h-10 w-10 -rotate-12 transform" />
           </a>
         }
-        src={campusDashboard}
+        src="/placeholder.svg"
         showGradient={false}
       />
     </div>
