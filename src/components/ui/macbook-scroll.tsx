@@ -52,23 +52,23 @@ export const MacbookScroll = ({
 
   const scaleX = useTransform(
     scrollYProgress,
-    [0, 0.3],
-    [1.2, isMobile ? 1 : 1.5],
+    [0, 0.3, 0.7],
+    [1.2, isMobile ? 1 : 1.5, 0.8],
   );
   const scaleY = useTransform(
     scrollYProgress,
-    [0, 0.3],
-    [0.6, isMobile ? 1 : 1.5],
+    [0, 0.3, 0.7],
+    [0.6, isMobile ? 1 : 1.5, 0.8],
   );
-  const translate = useTransform(scrollYProgress, [0, 1], [0, 1500]);
-  const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
+  const translate = useTransform(scrollYProgress, [0, 0.6, 1], [0, 800, 1200]);
+  const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3, 0.7], [-28, -28, 0, 0]);
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
   return (
     <div
       ref={ref}
-      className="flex min-h-[120vh] shrink-0 scale-[0.35] transform flex-col items-center justify-start py-0 [perspective:800px] sm:scale-50 md:scale-100 md:py-40"
+      className="flex min-h-[180vh] shrink-0 scale-[0.35] transform flex-col items-center justify-start py-0 [perspective:800px] sm:scale-50 md:scale-100 md:py-40 relative z-10"
     >
       <motion.h2
         style={{

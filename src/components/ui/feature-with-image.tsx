@@ -2,10 +2,12 @@ import { Badge } from "@/components/ui/badge";
 
 function Feature() {
   return (
-    <div className="w-full py-20 lg:py-40 bg-black dark:bg-black">
+    <div className="w-full py-20 lg:py-40 bg-black dark:bg-black relative -mt-40 pt-60">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-10 lg:items-center">
-          <div className="bg-muted rounded-md w-full aspect-video h-full flex-1"></div>
+          <div className="bg-transparent rounded-md w-full aspect-video h-full flex-1 relative">
+            {/* This div will serve as the target area where the macbook gets "fixed" */}
+          </div>
           <div className="flex gap-4 pl-0 lg:pl-20 flex-col flex-1">
             <div>
               <Badge variant="secondary">Platform</Badge>
