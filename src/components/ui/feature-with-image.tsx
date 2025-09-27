@@ -1,12 +1,32 @@
 import { Badge } from "@/components/ui/badge";
+import { useScroll, useTransform, motion } from "framer-motion";
+import { useRef } from "react";
+import campusNexusDashboard from "@/assets/campus-nexus-dashboard.jpg";
 
 function Feature() {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"]
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
+
   return (
-    <div className="w-full py-20 lg:py-40 bg-black dark:bg-black relative -mt-40 pt-60">
+    <div ref={ref} className="w-full py-20 lg:py-40 bg-black dark:bg-black relative -mt-40 pt-60">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-10 lg:items-center">
-          <div className="bg-transparent rounded-md w-full aspect-video h-full flex-1 relative">
-            {/* This div will serve as the target area where the macbook gets "fixed" */}
+          <div className="bg-transparent rounded-md w-full aspect-video h-full flex-1 relative overflow-hidden">
+            <motion.div
+              style={{ y }}
+              className="sticky top-1/2 transform -translate-y-1/2"
+            >
+              <img 
+                src={campusNexusDashboard} 
+                alt="Campus Nexus ERP Dashboard"
+                className="w-full h-full object-cover rounded-lg shadow-2xl"
+              />
+            </motion.div>
           </div>
           <div className="flex gap-4 pl-0 lg:pl-20 flex-col flex-1">
             <div>
