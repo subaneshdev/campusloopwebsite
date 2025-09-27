@@ -2,6 +2,7 @@ import WarpDriveShader from "@/components/ui/warp-drive-shader";
 import { Button } from "@/components/ui/button";
 import RotatingGradientRight from "@/components/ui/rotating-gradient-right";
 import MacbookScrollDemo from "@/components/macbook-scroll-demo";
+import { Feature } from "@/components/ui/feature-with-image";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       </div>
       <RotatingGradientRight />
       <MacbookScrollDemo />
+      <Feature />
     </>
   );
 };
