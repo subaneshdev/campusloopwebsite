@@ -4,6 +4,7 @@ import RotatingGradientRight from "@/components/ui/rotating-gradient-right";
 import MacbookScrollDemo from "@/components/macbook-scroll-demo";
 import { Feature } from "@/components/ui/feature-with-image";
 import WobbleCardDemo from "@/components/wobble-card-demo";
+import { Skiper31 } from "@/components/ui/text-scroll-animation";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
         </div>
       </div>
       <RotatingGradientRight />
+      <Skiper31 />
       <MacbookScrollDemo />
       <Feature />
       <WobbleCardDemo />
