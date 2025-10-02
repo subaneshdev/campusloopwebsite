@@ -4,7 +4,7 @@ import campusNexusDashboard from "@/assets/campus-nexus-dashboard.jpg";
 
 export default function MacbookScrollDemo() {
   return (
-    <div className="w-full overflow-hidden bg-white dark:bg-[#0B0B0F]">
+    <div className="w-full overflow-hidden bg-white dark:bg-[#0B0B0F] h-[70vh] md:h-auto">
       <MacbookScroll
         title={
           <span>
