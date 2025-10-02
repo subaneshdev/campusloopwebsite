@@ -25,13 +25,16 @@ print("\\nApply now → careers@campusloop.in")
 `;
 
   return (
-    <div className="max-w-3xl mx-auto w-full py-16">
-      <CodeBlock
-        language="python"
-        filename="hiring.py"
-        highlightLines={[1, 14, 19]}
-        code={code}
-      />
+    <div className="min-h-screen bg-background flex items-center justify-center px-4 py-24">
+      <div className="max-w-3xl w-full">
+        <h2 className="text-4xl font-bold text-center mb-8 text-foreground">Join Our Team</h2>
+        <CodeBlock
+          language="python"
+          filename="hiring.py"
+          highlightLines={[1, 14, 19]}
+          code={code}
+        />
+      </div>
     </div>
   );
 }
