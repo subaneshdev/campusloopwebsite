@@ -16,6 +16,11 @@ const Index = () => {
               <h1 className="text-6xl md:text-8xl font-bold text-white">Campus Loop</h1>
               <p className="text-xl md:text-2xl text-white/80 font-light">where every student's journey comes full circle</p>
             </div>
+            <div className="flex justify-center pt-8">
+              <button className="scroll-btn">
+                <div className="scroll-indicator"></div>
+              </button>
+            </div>
           </div>
         </div>
       </div>
