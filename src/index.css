@@ -216,8 +216,8 @@ All colors MUST be HSL.
     justify-content: center;
     background-color: transparent;
     border: none;
-    outline: 2px solid hsl(var(--primary));
-    box-shadow: 0px 0px 10px hsl(var(--primary-glow));
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
     position: relative;
     cursor: pointer;
   }
@@ -226,8 +226,8 @@ All colors MUST be HSL.
     width: 5px;
     height: 10px;
     border-radius: 10px;
-    background-color: hsl(var(--primary));
-    box-shadow: 0px 0px 10px hsl(var(--primary-glow));
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6));
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
     animation: scroll-animation 2s linear infinite;
     transform: translateY(40%);
   }
