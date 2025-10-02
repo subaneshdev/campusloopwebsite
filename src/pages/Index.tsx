@@ -4,6 +4,7 @@ import RotatingGradientRight from "@/components/ui/rotating-gradient-right";
 import MacbookScrollDemo from "@/components/macbook-scroll-demo";
 import { Feature } from "@/components/ui/feature-with-image";
 import WobbleCardDemo from "@/components/wobble-card-demo";
+import CodeBlockDemo from "@/components/code-block-demo";
 
 const Index = () => {
   return (
@@ -28,6 +29,7 @@ const Index = () => {
       <MacbookScrollDemo />
       <Feature />
       <WobbleCardDemo />
+      <CodeBlockDemo />
     </>
   );
 };
